@@ -1,0 +1,1 @@
+PODS_CRAMR_V____AFNETWORKING_OTHER_LDFLAGS = -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"

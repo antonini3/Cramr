@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Cramr_v2_0.LoginViewController.loginViewFetchedUserInfo (Cramr_v2_0.LoginViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.FBLoginView&gt;, user : ObjectiveC.FBGraphUser) -&gt; ():LoginViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

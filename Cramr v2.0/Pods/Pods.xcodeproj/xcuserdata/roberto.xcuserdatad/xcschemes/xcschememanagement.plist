@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Cramr v2.0-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Cramr v2.0-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Cramr v2.0-Facebook-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Cramr v2.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>076F86F0302A5B89A144654B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>35E7F6F49B27DBA2B135935C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDAA018D2DE002CFBA8A97E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAAE72D1C71DED37F3A5106D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,9 @@
+SessionLockedViewController.swift
+CourseListTableView.swift
+LocalDataStore.swift
+LoginviewController.swift
+SessionCreationViewController.swift
+SessionBrowserViewController.swift
+MasterViewController.swift
+SessionContentViewController.swift
+DatabaseAccess.swift (apart from isUserinSession)

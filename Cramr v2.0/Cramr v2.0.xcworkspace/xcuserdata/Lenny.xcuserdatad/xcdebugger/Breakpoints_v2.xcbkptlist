@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cramr v2.0/SessionContentViewController.swift"
+            timestampString = "445240690.94422"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cramr v2.0/SessionViewController.swift"
+            timestampString = "445232910.70498"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewControllerAtIndex(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cramr_v2_0.SessionViewController.viewControllerAtIndex (Cramr_v2_0.SessionViewController)(Swift.Int) -&gt; Swift.Optional&lt;Cramr_v2_0.SessionContentViewController&gt;"
+                  moduleName = "Cramr v2.0"
+                  urlString = "file:///Users/Lenny/Documents/cs194/git/GroupStudy/Cramr%20v2.0/Cramr%20v2.0/SessionViewController.swift"
+                  timestampString = "445232910.773724"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cramr_v2_0.SessionViewController.viewControllerAtIndex (Cramr_v2_0.SessionViewController)(Swift.Int) -&gt; Swift.Optional&lt;Cramr_v2_0.SessionContentViewController&gt;"
+                  moduleName = "Cramr v2.0"
+                  urlString = "file:///Users/Lenny/Documents/cs194/git/GroupStudy/Cramr%20v2.0/Cramr%20v2.0/SessionViewController.swift"
+                  timestampString = "445232910.802859"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "265">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cramr v2.0/SessionViewController.swift"
+            timestampString = "445232912.440519"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewControllerAtIndex(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cramr v2.0/SessionViewController.swift"
+            timestampString = "445233019.047227"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "configureView()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cramr v2.0/SessionContentViewController.swift"
+            timestampString = "445240690.94422"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "SessionContentViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cramr_v2_0.SessionContentViewController.descript.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
+                  moduleName = "Cramr v2.0"
+                  urlString = "file:///Users/Lenny/Documents/cs194/git/GroupStudy/Cramr%20v2.0/Cramr%20v2.0/SessionContentViewController.swift"
+                  timestampString = "445235743.386617"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cramr_v2_0.SessionContentViewController.descript.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
+                  moduleName = "Cramr v2.0"
+                  urlString = "file:///Users/Lenny/Documents/cs194/git/GroupStudy/Cramr%20v2.0/Cramr%20v2.0/SessionContentViewController.swift"
+                  timestampString = "445235743.387043"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cramr_v2_0.SessionContentViewController.init (Cramr_v2_0.SessionContentViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Cramr_v2_0.SessionContentViewController"
+                  moduleName = "Cramr v2.0"
+                  urlString = "file:///Users/Lenny/Documents/cs194/git/GroupStudy/Cramr%20v2.0/Cramr%20v2.0/SessionContentViewController.swift"
+                  timestampString = "445235743.387257"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "157">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cramr_v2_0.SessionContentViewController.init (Cramr_v2_0.SessionContentViewController.Type)() -&gt; Cramr_v2_0.SessionContentViewController"
+                  moduleName = "Cramr v2.0"
+                  urlString = "file:///Users/Lenny/Documents/cs194/git/GroupStudy/Cramr%20v2.0/Cramr%20v2.0/SessionContentViewController.swift"
+                  timestampString = "445235743.387441"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cramr_v2_0.SessionContentViewController.init (Cramr_v2_0.SessionContentViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Cramr_v2_0.SessionContentViewController"
+                  moduleName = "Cramr v2.0"
+                  urlString = "file:///Users/Lenny/Documents/cs194/git/GroupStudy/Cramr%20v2.0/Cramr%20v2.0/SessionContentViewController.swift"
+                  timestampString = "445235743.387612"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cramr v2.0/SessionContentViewController.swift"
+            timestampString = "445240690.94422"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cramr v2.0/SessionContentViewController.swift"
+            timestampString = "445240690.94422"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

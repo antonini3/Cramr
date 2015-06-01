@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.1'
+
+target 'Cramr v2.0' do
+
+pod 'AFNetworking'
+
+pod 'Facebook-iOS-SDK'
+
+end
+
+target 'Cramr v2.0Tests' do
+
+end
+
