@@ -48,6 +48,7 @@
 		7B498E421AFCAEB2007EBB67 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B498E401AFCAEB2007EBB67 /* Message.swift */; };
 		7B4FA77A1AA51C3500CABAC4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9B4CC1AA518CF00CD015D /* CoreData.framework */; };
 		7B85596D1A9D35BF00387783 /* DatabaseAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85596C1A9D35BF00387783 /* DatabaseAccess.swift */; };
+		7B87C10A1B1D2666009E9BAB /* CustomBrowserMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C1091B1D2666009E9BAB /* CustomBrowserMarker.swift */; };
 		7B9642B01A969EA800331CA7 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9642AF1A969EA800331CA7 /* Util.swift */; };
 		7B9642B21A96B85A00331CA7 /* LocalDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9642B11A96B85A00331CA7 /* LocalDatastore.swift */; };
 		7B9B54AF1A7B066500064762 /* CourseListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9B54AE1A7B066500064762 /* CourseListTableView.swift */; };
@@ -129,6 +130,7 @@
 		7B498E3F1AFCAEB2007EBB67 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagesViewController.swift; path = "../../../fireChat/FireChat-Swift/MessagesViewController.swift"; sourceTree = "<group>"; };
 		7B498E401AFCAEB2007EBB67 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "../../../fireChat/FireChat-Swift/Message.swift"; sourceTree = "<group>"; };
 		7B85596C1A9D35BF00387783 /* DatabaseAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseAccess.swift; sourceTree = "<group>"; };
+		7B87C1091B1D2666009E9BAB /* CustomBrowserMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBrowserMarker.swift; sourceTree = "<group>"; };
 		7B9642AF1A969EA800331CA7 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		7B9642B11A96B85A00331CA7 /* LocalDatastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDatastore.swift; sourceTree = "<group>"; };
 		7B9B54AE1A7B066500064762 /* CourseListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseListTableView.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				62B246931A97F385006D23D8 /* CustomCourseTableCell.swift */,
 				7B33AFD51A772A570043841E /* Main.storyboard */,
 				7BCF00271A832F1E00CD0C40 /* SessionBrowserViewController.swift */,
+				7B87C1091B1D2666009E9BAB /* CustomBrowserMarker.swift */,
 				7BE9B4C21AA50C9000CD015D /* SessionCreationViewController.swift */,
 				7BA8E3E91A89F0E200728163 /* SessionLockedViewController.swift */,
 				7B9B54AE1A7B066500064762 /* CourseListTableView.swift */,
@@ -485,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B87C10A1B1D2666009E9BAB /* CustomBrowserMarker.swift in Sources */,
 				7B85596D1A9D35BF00387783 /* DatabaseAccess.swift in Sources */,
 				625806881A7DA2A7002AAD26 /* LoginViewController.swift in Sources */,
 				7B9642B21A96B85A00331CA7 /* LocalDatastore.swift in Sources */,

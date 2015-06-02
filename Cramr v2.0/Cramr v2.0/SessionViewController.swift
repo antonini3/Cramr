@@ -76,7 +76,8 @@ class SessionViewController: UIPageViewController, UIPageViewControllerDataSourc
         }
         return NSNotFound
     }
-    
+
+
     /**
         This function returns the session content view controller for the bordering session content view controller before the one the user is looking at.
         
@@ -93,7 +94,43 @@ class SessionViewController: UIPageViewController, UIPageViewControllerDataSourc
         }
         
         index--
+        leftSwipe = true
         return viewControllerAtIndex(index)
+    }
+    
+//    override func setViewControllers(viewControllers: [AnyObject]!, direction: UIPageViewControllerNavigationDirection, animated: Bool, completion: ((Bool) -> Void)!) {
+//        super.setViewControllers(viewControllers, direction: direction, animated: animated, completion: completion)
+//        if (markerSelect == false) {
+//            if (direction == UIPageViewControllerNavigationDirection.Forward) {
+//                currentIndex++
+//            } else {
+//                currentIndex--
+//            }
+//            (self.parentViewController as! SessionBrowserViewController).updateMapMarker(currentIndex)
+//        }
+//        NSLog( "%d" , currentIndex)
+//        markerSelect = false;
+//    }
+    
+    var leftSwipe : Bool = false
+    var rightSwipe : Bool = false
+    
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [AnyObject], transitionCompleted completed: Bool) {
+//        
+//        if (!completed) {
+//            return
+//        }
+//        
+//        var currIndex = (self.pageController?.viewControllers as! [UIViewController]).last as
+//        if (leftSwipe && currentIndex > 1) {
+//            currentIndex--
+//            (self.parentViewController as! SessionBrowserViewController).updateMapMarker(currentIndex)
+//        } else if (rightSwipe && currentIndex < sessions.count - 1) {
+//            currentIndex++
+//            (self.parentViewController as! SessionBrowserViewController).updateMapMarker(currentIndex)
+//        }
+//        leftSwipe = false
+//        rightSwipe = false
     }
     
     /**
@@ -115,6 +152,7 @@ class SessionViewController: UIPageViewController, UIPageViewControllerDataSourc
         if index == sessions.count {
             return nil
         }
+        rightSwipe = true
         return viewControllerAtIndex(index)
     }
 
@@ -145,7 +183,54 @@ class SessionViewController: UIPageViewController, UIPageViewControllerDataSourc
         var pageViewRect = self.view.bounds
         pageController!.view.frame = pageViewRect
         pageController!.didMoveToParentViewController(self)
+        
+        currentIndex = 0
     }
+    
+    var currentIndex : Int = 0
+    
+    
+    func goToView(index: Int) {
+        NSLog( "%d" , currentIndex)
+//        
+//        if currentIndex == index {
+//            return
+//        }
+//        
+//        if currentIndex < index {
+//            while(currentIndex < index) {
+//                
+//            }
+//        }
+        
+        
+        let startingViewController: SessionContentViewController =
+        viewControllerAtIndex(index)!
+        
+        var direction = UIPageViewControllerNavigationDirection.Forward
+        if (self.currentIndex > index) {
+            direction = UIPageViewControllerNavigationDirection.Reverse
+        }
+
+
+        let viewControllers: NSArray = [startingViewController]
+        pageController!.setViewControllers(viewControllers as [AnyObject],
+            direction: direction,
+            animated: true,
+            completion: nil)
+        
+        self.addChildViewController(pageController!)
+        self.view.addSubview(self.pageController!.view)
+        
+        var pageViewRect = self.view.bounds
+        pageController!.view.frame = pageViewRect
+        pageController!.didMoveToParentViewController(self)
+        
+        currentIndex = index
+
+    }
+    
+    
 
     /**
         This function creates calls the function to create the page view controller as long as there are active sessions.

@@ -308,17 +308,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" id="zlX-4b-KnN">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="286"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
                                     <segue destination="mrd-yf-uef" kind="embed" identifier="sessionSwiper" id="vg5-zj-sAr"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" id="Dzf-FV-hBK" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="286" width="320" height="282"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="SVg-aE-6ev"/>
                     <connections>
+                        <outlet property="browserMapView" destination="Dzf-FV-hBK" id="eYr-ab-uto"/>
                         <segue destination="ixg-FD-sK0" kind="push" identifier="lockSessionView" id="HFG-mq-ZZL"/>
                         <segue destination="tZc-tE-04L" kind="unwind" identifier="unwindBack" unwindAction="popToPrevView:" id="2Sx-ff-Ovw"/>
                         <segue destination="clT-VE-6om" kind="push" identifier="createSessionView" id="8Au-ov-iDR"/>
@@ -337,17 +343,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="N8M-Tj-Grm" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="frC-Xm-as8">
                                 <rect key="frame" x="0.0" y="99" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3aq-cv-pmg">
-                                <rect key="frame" x="77" y="361" width="167" height="128"/>
+                                <rect key="frame" x="256" y="15" width="48" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.88276055519999996" green="0.88276055519999996" blue="0.88276055519999996" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -356,22 +357,15 @@
                                     <segue destination="d9z-YV-gzv" kind="modal" identifier="chatSegue" id="dIk-Vx-tjj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1AT-3q-nZF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.32156862749999998" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YeO-KK-7hY">
-                                <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="53" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.32156862749999998" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="80m-vO-tIQ">
-                                <rect key="frame" x="16" y="498" width="288" height="50"/>
+                                <rect key="frame" x="16" y="530" width="288" height="33"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.32156862749999998" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -383,6 +377,13 @@
                                     <action selector="joinButton:" destination="NhR-eP-N76" eventType="touchUpInside" id="7Z6-Af-VK1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1AT-3q-nZF">
+                                <rect key="frame" x="0.0" y="13" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.32156862749999998" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -393,7 +394,6 @@
                         <outlet property="currentMembersScrollView" destination="frC-Xm-as8" id="hPi-Z7-gvT"/>
                         <outlet property="descript" destination="1AT-3q-nZF" id="wIs-4q-lEL"/>
                         <outlet property="locationLabel" destination="YeO-KK-7hY" id="hgD-eH-Zfx"/>
-                        <outlet property="sessionMapView" destination="N8M-Tj-Grm" id="PVR-sn-9IN"/>
                         <segue destination="ixg-FD-sK0" kind="push" identifier="pushToLockedFromJoin" id="zql-Sy-5Bc"/>
                     </connections>
                 </viewController>
@@ -618,6 +618,6 @@
         <segue reference="p5k-FG-nF6"/>
         <segue reference="zql-Sy-5Bc"/>
         <segue reference="dIk-Vx-tjj"/>
-        <segue reference="wg3-Jn-cuq"/>
+        <segue reference="8Au-ov-iDR"/>
     </inferredMetricsTieBreakers>
 </document>

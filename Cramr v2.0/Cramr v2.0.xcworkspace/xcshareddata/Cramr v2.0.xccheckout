@@ -7,31 +7,39 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B2771856-9292-44F3-82F7-983EAA53814E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Cramr v2.0</string>
+	<string>cramr v2.0</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>34DB58C3C299570B0AE1507342B3D826C701F155</key>
-		<string>https://github.com/marcoal/GroupStudy.git</string>
 		<key>5C880BE1B99588B39156D68833EAB2407BF6A594</key>
 		<string>https://github.com/firebase/ios-swift-chat-example.git</string>
+		<key>94E45F7534B52862A8B90AEFDAED240B80EE898B</key>
+		<string>https://github.com/antonini3/Cramr.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Cramr v2.0/Cramr v2.0.xcworkspace</string>
+	<string>Cramr v2.0/cramr v2.0.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>34DB58C3C299570B0AE1507342B3D826C701F155</key>
-		<string>../..</string>
 		<key>5C880BE1B99588B39156D68833EAB2407BF6A594</key>
 		<string>../../../fireChat</string>
+		<key>94E45F7534B52862A8B90AEFDAED240B80EE898B</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/marcoal/GroupStudy.git</string>
+	<string>https://github.com/antonini3/Cramr.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>34DB58C3C299570B0AE1507342B3D826C701F155</string>
+	<string>94E45F7534B52862A8B90AEFDAED240B80EE898B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>94E45F7534B52862A8B90AEFDAED240B80EE898B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>final_cramr</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
@@ -39,14 +47,6 @@
 			<string>5C880BE1B99588B39156D68833EAB2407BF6A594</string>
 			<key>IDESourceControlWCCName</key>
 			<string>fireChat</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>34DB58C3C299570B0AE1507342B3D826C701F155</string>
-			<key>IDESourceControlWCCName</key>
-			<string>git</string>
 		</dict>
 	</array>
 </dict>

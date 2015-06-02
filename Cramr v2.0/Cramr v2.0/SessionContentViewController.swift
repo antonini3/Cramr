@@ -20,8 +20,8 @@ class SessionContentViewController: UIViewController {
     @IBOutlet weak var descript: UILabel!
     
     @IBOutlet weak var locationLabel: UILabel!
-    
-    @IBOutlet weak var sessionMapView: GMSMapView!
+//    
+//    @IBOutlet weak var sessionMapView: GMSMapView!
     
     @IBOutlet weak var currentMembersScrollView: UIScrollView!
     
@@ -149,23 +149,23 @@ class SessionContentViewController: UIViewController {
         * It gets the lat and long positions of the study group and sets the camera there
         * It also displays the user
     */
-    func setupMap() {
-        var latitude: Double = (self.session["latitude"]! as NSString).doubleValue
-        var longitude: Double = (self.session["longitude"]! as NSString).doubleValue
-        self.sessionMapView.padding = UIEdgeInsets(top: 150, left: 0, bottom: 70, right: 0)
-
-        var camera = GMSCameraPosition.cameraWithLatitude(latitude as CLLocationDegrees, longitude: longitude as CLLocationDegrees, zoom: 17.0)
-        self.sessionMapView.camera = camera
-        self.sessionMapView.myLocationEnabled = true
-        
-        var position = CLLocationCoordinate2DMake(latitude, longitude)
-        var marker = GMSMarker(position: position)
-        marker.icon = UIImage(named: "blue_map_marker")
-        marker.map = self.sessionMapView
-        
-//        self.sessionMapView.layer.borderWidth = 1.0
-//        self.sessionMapView.layer.borderColor = cramrBlue.CGColor
-    }
+//    func setupMap() {
+//        var latitude: Double = (self.session["latitude"]! as NSString).doubleValue
+//        var longitude: Double = (self.session["longitude"]! as NSString).doubleValue
+//        self.sessionMapView.padding = UIEdgeInsets(top: 150, left: 0, bottom: 70, right: 0)
+//
+//        var camera = GMSCameraPosition.cameraWithLatitude(latitude as CLLocationDegrees, longitude: longitude as CLLocationDegrees, zoom: 17.0)
+//        self.sessionMapView.camera = camera
+//        self.sessionMapView.myLocationEnabled = true
+//        
+//        var position = CLLocationCoordinate2DMake(latitude, longitude)
+//        var marker = GMSMarker(position: position)
+//        marker.icon = UIImage(named: "blue_map_marker")
+//        marker.map = self.sessionMapView
+//        
+////        self.sessionMapView.layer.borderWidth = 1.0
+////        self.sessionMapView.layer.borderColor = cramrBlue.CGColor
+//    }
     
     
     /**
@@ -175,7 +175,7 @@ class SessionContentViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
         
-        setupMap()
+//        setupMap()
         self.setLabels()
         addBlur(self.view, [self.descript, self.locationLabel, self.currentMembersScrollView])
         
