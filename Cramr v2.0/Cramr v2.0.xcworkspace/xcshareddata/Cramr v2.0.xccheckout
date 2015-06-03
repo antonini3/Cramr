@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B2771856-9292-44F3-82F7-983EAA53814E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>cramr v2.0</string>
+	<string>Cramr v2.0</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5C880BE1B99588B39156D68833EAB2407BF6A594</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/antonini3/Cramr.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Cramr v2.0/cramr v2.0.xcworkspace</string>
+	<string>Cramr v2.0/Cramr v2.0.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5C880BE1B99588B39156D68833EAB2407BF6A594</key>

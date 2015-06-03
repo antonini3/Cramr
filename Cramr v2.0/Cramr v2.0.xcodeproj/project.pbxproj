@@ -44,11 +44,11 @@
 		7B33AFE81A772A570043841E /* Cramr_v2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B33AFE71A772A570043841E /* Cramr_v2_0Tests.swift */; };
 		7B498E371AFCABC9007EBB67 /* JSQMessagesViewController in Resources */ = {isa = PBXBuildFile; fileRef = 7B498E361AFCABC9007EBB67 /* JSQMessagesViewController */; };
 		7B498E3E1AFCAD47007EBB67 /* JSQSystemSoundPlayer in Resources */ = {isa = PBXBuildFile; fileRef = 7B498E3D1AFCAD47007EBB67 /* JSQSystemSoundPlayer */; };
-		7B498E411AFCAEB2007EBB67 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B498E3F1AFCAEB2007EBB67 /* MessagesViewController.swift */; };
-		7B498E421AFCAEB2007EBB67 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B498E401AFCAEB2007EBB67 /* Message.swift */; };
 		7B4FA77A1AA51C3500CABAC4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9B4CC1AA518CF00CD015D /* CoreData.framework */; };
 		7B85596D1A9D35BF00387783 /* DatabaseAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85596C1A9D35BF00387783 /* DatabaseAccess.swift */; };
 		7B87C10A1B1D2666009E9BAB /* CustomBrowserMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C1091B1D2666009E9BAB /* CustomBrowserMarker.swift */; };
+		7B87C10C1B1EC8E5009E9BAB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C10B1B1EC8E5009E9BAB /* MessagesViewController.swift */; };
+		7B87C10E1B1EC903009E9BAB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C10D1B1EC903009E9BAB /* Message.swift */; };
 		7B9642B01A969EA800331CA7 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9642AF1A969EA800331CA7 /* Util.swift */; };
 		7B9642B21A96B85A00331CA7 /* LocalDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9642B11A96B85A00331CA7 /* LocalDatastore.swift */; };
 		7B9B54AF1A7B066500064762 /* CourseListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9B54AE1A7B066500064762 /* CourseListTableView.swift */; };
@@ -127,10 +127,10 @@
 		7B33AFE71A772A570043841E /* Cramr_v2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cramr_v2_0Tests.swift; sourceTree = "<group>"; };
 		7B498E361AFCABC9007EBB67 /* JSQMessagesViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = JSQMessagesViewController; path = "Cramr v2.0/JSQMessagesViewController"; sourceTree = "<group>"; };
 		7B498E3D1AFCAD47007EBB67 /* JSQSystemSoundPlayer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = JSQSystemSoundPlayer; path = "Cramr v2.0/JSQSystemSoundPlayer/JSQSystemSoundPlayer"; sourceTree = "<group>"; };
-		7B498E3F1AFCAEB2007EBB67 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagesViewController.swift; path = "../../../fireChat/FireChat-Swift/MessagesViewController.swift"; sourceTree = "<group>"; };
-		7B498E401AFCAEB2007EBB67 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "../../../fireChat/FireChat-Swift/Message.swift"; sourceTree = "<group>"; };
 		7B85596C1A9D35BF00387783 /* DatabaseAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseAccess.swift; sourceTree = "<group>"; };
 		7B87C1091B1D2666009E9BAB /* CustomBrowserMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBrowserMarker.swift; sourceTree = "<group>"; };
+		7B87C10B1B1EC8E5009E9BAB /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		7B87C10D1B1EC903009E9BAB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7B9642AF1A969EA800331CA7 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		7B9642B11A96B85A00331CA7 /* LocalDatastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDatastore.swift; sourceTree = "<group>"; };
 		7B9B54AE1A7B066500064762 /* CourseListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseListTableView.swift; sourceTree = "<group>"; };
@@ -278,8 +278,8 @@
 		7B33AFC91A772A570043841E /* Cramr v2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				7B498E3F1AFCAEB2007EBB67 /* MessagesViewController.swift */,
-				7B498E401AFCAEB2007EBB67 /* Message.swift */,
+				7B87C10B1B1EC8E5009E9BAB /* MessagesViewController.swift */,
+				7B87C10D1B1EC903009E9BAB /* Message.swift */,
 				7BC138FD1AB05636004DD044 /* OnboardingContentViewController.swift */,
 				7BC138FE1AB05636004DD044 /* OnboardingViewController.swift */,
 				7B33AFCC1A772A570043841E /* AppDelegate.swift */,
@@ -492,12 +492,11 @@
 				7B85596D1A9D35BF00387783 /* DatabaseAccess.swift in Sources */,
 				625806881A7DA2A7002AAD26 /* LoginViewController.swift in Sources */,
 				7B9642B21A96B85A00331CA7 /* LocalDatastore.swift in Sources */,
-				7B498E421AFCAEB2007EBB67 /* Message.swift in Sources */,
-				7B498E411AFCAEB2007EBB67 /* MessagesViewController.swift in Sources */,
 				7BCFFFF01A82CFC700CD0C40 /* SessionContentViewController.swift in Sources */,
 				7BE9B4C31AA50C9000CD015D /* SessionCreationViewController.swift in Sources */,
 				7B9B54AF1A7B066500064762 /* CourseListTableView.swift in Sources */,
 				7B33AFD01A772A570043841E /* Cramr_v2_0.xcdatamodeld in Sources */,
+				7B87C10C1B1EC8E5009E9BAB /* MessagesViewController.swift in Sources */,
 				7BCF00281A832F1E00CD0C40 /* SessionBrowserViewController.swift in Sources */,
 				62B246941A97F385006D23D8 /* CustomCourseTableCell.swift in Sources */,
 				7B33AFCD1A772A570043841E /* AppDelegate.swift in Sources */,
@@ -505,6 +504,7 @@
 				7BC139001AB05636004DD044 /* OnboardingViewController.swift in Sources */,
 				7B33AFD21A772A570043841E /* MasterViewController.swift in Sources */,
 				7B9642B01A969EA800331CA7 /* Util.swift in Sources */,
+				7B87C10E1B1EC903009E9BAB /* Message.swift in Sources */,
 				7BA8E3EA1A89F0E200728163 /* SessionLockedViewController.swift in Sources */,
 				7B33AFD41A772A570043841E /* SessionViewController.swift in Sources */,
 			);
