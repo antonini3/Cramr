@@ -125,6 +125,8 @@ class SessionBrowserViewController : UIViewController, CLLocationManagerDelegate
         }
         markers[index].icon = UIImage(named: "grey_marker")
         prevMarker = index
+        
+        self.browserMapView.animateToLocation(markers[index].position)
     }
     
     var markers = [CustomBrowserMarker]()

@@ -38,7 +38,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>By accessing your location, you can make session on the fly!</string>
+	<string>By accessing your location, you can make Cram session on the fly!</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

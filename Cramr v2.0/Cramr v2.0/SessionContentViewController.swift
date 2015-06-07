@@ -177,7 +177,7 @@ class SessionContentViewController: UIViewController {
         
 //        setupMap()
         self.setLabels()
-        addBlur(self.view, [self.descript, self.locationLabel, self.currentMembersScrollView])
+        //addBlur(self.view, [self.descript, self.locationLabel, self.currentMembersScrollView])
         
     }
     

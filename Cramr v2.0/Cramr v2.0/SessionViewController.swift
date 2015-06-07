@@ -131,6 +131,20 @@ class SessionViewController: UIPageViewController, UIPageViewControllerDataSourc
 //        }
 //        leftSwipe = false
 //        rightSwipe = false
+    
+        var vc = pageViewController.viewControllers.last
+        var session = (vc as! SessionContentViewController).session
+        
+        var index = 0
+        for var i = 0; i < sessions.count; i++ {
+            if (sessions[i]["sessionID"] == session["sessionID"]) {
+                index = i
+            }
+        }
+        currentIndex = index
+        (self.parentViewController as! SessionBrowserViewController).updateMapMarker(currentIndex)
+
+        
     }
     
     /**
