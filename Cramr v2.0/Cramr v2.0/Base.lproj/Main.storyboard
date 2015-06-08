@@ -307,23 +307,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="Dzf-FV-hBK" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </view>
                             <containerView opaque="NO" contentMode="scaleToFill" id="zlX-4b-KnN">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="286"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="mrd-yf-uef" kind="embed" identifier="sessionSwiper" id="vg5-zj-sAr"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" id="Dzf-FV-hBK" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="286" width="320" height="282"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="SVg-aE-6ev"/>
                     <connections>
+                        <outlet property="browserContainerView" destination="zlX-4b-KnN" id="9YJ-u1-MEs"/>
                         <outlet property="browserMapView" destination="Dzf-FV-hBK" id="eYr-ab-uto"/>
                         <segue destination="ixg-FD-sK0" kind="push" identifier="lockSessionView" id="HFG-mq-ZZL"/>
                         <segue destination="tZc-tE-04L" kind="unwind" identifier="unwindBack" unwindAction="popToPrevView:" id="2Sx-ff-Ovw"/>
@@ -372,7 +372,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="80m-vO-tIQ">
-                                <rect key="frame" x="16" y="515" width="288" height="33"/>
+                                <rect key="frame" x="16" y="518" width="288" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.32156862749999998" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -385,7 +385,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -466,11 +465,22 @@
                                     <action selector="leaveSession:" destination="ixg-FD-sK0" eventType="touchUpInside" id="o0c-3t-QDV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FVY-k3-wzw">
+                                <rect key="frame" x="256" y="20" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88276055519999996" green="0.88276055519999996" blue="0.88276055519999996" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Chat" image="chat"/>
+                                <connections>
+                                    <segue destination="d9z-YV-gzv" kind="modal" identifier="chatSegue" id="elI-3g-Gno"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" id="aSr-6J-oCN"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="chatButton" destination="FVY-k3-wzw" id="ZO1-kx-6nr"/>
                         <outlet property="currentMembersScrollView" destination="H3r-h1-cWk" id="a37-bs-GeB"/>
                         <outlet property="desciptLabel" destination="Qj8-Qa-Hik" id="Zcm-h3-VWb"/>
                         <outlet property="leaveButton" destination="4mI-4D-88E" id="gMW-Xh-edv"/>
@@ -608,7 +618,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="p5k-FG-nF6"/>
-        <segue reference="zql-Sy-5Bc"/>
+        <segue reference="HFG-mq-ZZL"/>
         <segue reference="8Au-ov-iDR"/>
+        <segue reference="elI-3g-Gno"/>
     </inferredMetricsTieBreakers>
 </document>

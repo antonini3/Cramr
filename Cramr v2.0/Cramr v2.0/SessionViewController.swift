@@ -14,6 +14,7 @@ It is the container within the SessionBrowserViewController, which contains all 
 */
 class SessionViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
+    var backImage: UIImage!
     var sessions: [[String: String]]!
     var pageController: UIPageViewController?
     
@@ -56,6 +57,7 @@ class SessionViewController: UIPageViewController, UIPageViewControllerDataSourc
         let storyBoard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         let dataViewController = storyboard?.instantiateViewControllerWithIdentifier("sessionContent") as! SessionContentViewController
         dataViewController.session = self.sessions[index]
+        dataViewController.backgroundImage = self.backImage
         return dataViewController
     }
     
@@ -205,12 +207,11 @@ class SessionViewController: UIPageViewController, UIPageViewControllerDataSourc
     
     
     func goToView(index: Int) {
-        NSLog( "%d" , currentIndex)
 //        
-//        if currentIndex == index {
-//            return
-//        }
-//        
+        if currentIndex == index {
+            return
+        }
+//
 //        if currentIndex < index {
 //            while(currentIndex < index) {
 //                
@@ -218,20 +219,43 @@ class SessionViewController: UIPageViewController, UIPageViewControllerDataSourc
 //        }
         
         
-        let startingViewController: SessionContentViewController =
-        viewControllerAtIndex(index)!
         
-        var direction = UIPageViewControllerNavigationDirection.Forward
-        if (self.currentIndex > index) {
-            direction = UIPageViewControllerNavigationDirection.Reverse
+        
+        if (self.currentIndex < index) {
+            for var i = self.currentIndex + 1; i <= index; ++i {
+                let startingViewController: SessionContentViewController =
+                viewControllerAtIndex(i)!
+                let viewControllers: NSArray = [startingViewController]
+                pageController!.setViewControllers(viewControllers as [AnyObject],
+                    direction: UIPageViewControllerNavigationDirection.Forward,
+                    animated: true,
+                    completion: nil)
+                
+            }
+        } else {
+            for var i = self.currentIndex - 1; i >= index; --i {
+                let startingViewController: SessionContentViewController =
+                viewControllerAtIndex(i)!
+                let viewControllers: NSArray = [startingViewController]
+                pageController!.setViewControllers(viewControllers as [AnyObject],
+                    direction: UIPageViewControllerNavigationDirection.Reverse,
+                    animated: true,
+                    completion: nil)
+                
+            }
         }
 
-
-        let viewControllers: NSArray = [startingViewController]
-        pageController!.setViewControllers(viewControllers as [AnyObject],
-            direction: direction,
-            animated: true,
-            completion: nil)
+//        
+//        var direction =         if (self.currentIndex > index) {
+//            direction = UIPageViewControllerNavigationDirection.Reverse
+//        }
+//
+//
+//        let viewControllers: NSArray = [startingViewController]
+//        pageController!.setViewControllers(viewControllers as [AnyObject],
+//            direction: direction,
+//            animated: true,
+//            completion: nil)
         
         self.addChildViewController(pageController!)
         self.view.addSubview(self.pageController!.view)

@@ -33,6 +33,8 @@ class SessionLockedViewController: UIViewController, FBFriendPickerDelegate {
     
     @IBOutlet weak var currentMembersScrollView: UIScrollView!
     
+    @IBOutlet weak var chatButton: UIButton!
+    
     var currentMembersDict = [String : String]()
     
     var session: [String: String]! {
@@ -40,9 +42,7 @@ class SessionLockedViewController: UIViewController, FBFriendPickerDelegate {
             
         }
     }
-    
-    @IBOutlet weak var chatButton: UIButton!
-    
+
     /**
         Call backback function to be called by appDelegate after we leave the session.
     */
@@ -268,8 +268,8 @@ class SessionLockedViewController: UIViewController, FBFriendPickerDelegate {
         marker.map = self.lockedMapView
         
         
-        self.lockedMapView.layer.borderWidth = 1.0
-        self.lockedMapView.layer.borderColor = cramrBlue.CGColor
+        //self.lockedMapView.layer.borderWidth = 1.0
+        //self.lockedMapView.layer.borderColor = cramrBlue.CGColor
         self.lockedMapView.padding = UIEdgeInsets(top: 150, left: 0, bottom: 70, right: 0)
 
     }
@@ -291,6 +291,8 @@ class SessionLockedViewController: UIViewController, FBFriendPickerDelegate {
                 self.title = getCourseID(fullCourseName)
                 setupMap()
                 addBlur(self.view, [self.desciptLabel, self.locationLabel, self.currentMembersScrollView])
+                self.view.bringSubviewToFront(self.chatButton)
+
                 appDelegate.getSessionUsersAD(session["sessionID"]!, cb: currentUsersCallback)
             }
         } else {
@@ -340,7 +342,7 @@ class SessionLockedViewController: UIViewController, FBFriendPickerDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "chatSegue" {
-            (segue.destinationViewController as! MessagesViewController).backgroundImage = view.getImage()
+            (segue.destinationViewController as! MessagesViewController).backgroundImage = self.parentViewController!.view.getImage()
             (segue.destinationViewController as! MessagesViewController).session = self.session
         }
     }

@@ -15,6 +15,8 @@ class SessionContentViewController: UIViewController {
     
     var session: [String: String]!
     
+    var backgroundImage: UIImage!
+    
     var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     @IBOutlet weak var descript: UILabel!
@@ -173,7 +175,7 @@ class SessionContentViewController: UIViewController {
     */
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.whiteColor()
+        //view.backgroundColor = UIColor.whiteColor()
         
 //        setupMap()
         self.setLabels()
@@ -205,7 +207,7 @@ class SessionContentViewController: UIViewController {
         if segue.identifier == "pushToLockedFromJoin" {
             (segue.destinationViewController as! SessionLockedViewController).session = self.session
         } else if segue.identifier == "chatSegue" {
-            (segue.destinationViewController as! MessagesViewController).backgroundImage = convertViewToImage()
+            (segue.destinationViewController as! MessagesViewController).backgroundImage = self.backgroundImage
             (segue.destinationViewController as! MessagesViewController).session = self.session
         }
     }

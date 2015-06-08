@@ -104,7 +104,7 @@ class MessagesViewController: JSQMessagesViewController {
         backView.image = backgroundImage
 //
 //        
-        backView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
+        //backView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
 //        
         self.view.insertSubview(backView, atIndex: 0)
         

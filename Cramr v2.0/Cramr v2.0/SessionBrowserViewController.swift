@@ -17,6 +17,9 @@ class SessionBrowserViewController : UIViewController, CLLocationManagerDelegate
     
     @IBOutlet weak var browserMapView: GMSMapView!
     
+    
+    @IBOutlet weak var browserContainerView: UIView!
+    
     let locationManager = CLLocationManager()
     
     var sessions: [[String: String]]?
@@ -72,6 +75,7 @@ class SessionBrowserViewController : UIViewController, CLLocationManagerDelegate
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         if let location = locations.first as? CLLocation {
             self.browserMapView.camera = GMSCameraPosition(target : location.coordinate, zoom: 17, bearing: 0, viewingAngle: 0)
+            updateMapMarker(0)
             locationManager.stopUpdatingLocation()
         }
     }
@@ -88,6 +92,8 @@ class SessionBrowserViewController : UIViewController, CLLocationManagerDelegate
         locationManager.requestWhenInUseAuthorization()
         self.browserMapView.myLocationEnabled = true
         
+        self.browserMapView.padding = UIEdgeInsets(top: 264, left: 0, bottom: 0, right: 0)
+
 //        if (self.browserMapView.myLocation != nil) {
 //        var latitude = self.browserMapView.myLocation.coordinate.latitude
 //        var longitude = self.browserMapView.myLocation.coordinate.longitude
@@ -107,12 +113,13 @@ class SessionBrowserViewController : UIViewController, CLLocationManagerDelegate
             marker.session = session
             marker.index = i
             //var marker = GMSMarker(position: position)
-            marker.icon = UIImage(named: "blue_map_marker")
+            marker.icon = UIImage(named: "grey_marker")
             marker.map = self.browserMapView
         }
         
-        
-        
+        //self.browserMapView.camera = GMSCameraPosition(target: markers[0].position, zoom: 17, bearing: 0, viewingAngle: 0)
+        updateMapMarker(0)
+        addBlur(self.view, [self.browserContainerView])
         
         //        self.sessionMapView.layer.borderWidth = 1.0
         //        self.sessionMapView.layer.borderColor = cramrBlue.CGColor
@@ -121,9 +128,9 @@ class SessionBrowserViewController : UIViewController, CLLocationManagerDelegate
     
     func updateMapMarker(index: Int) {
         if (prevMarker != -1) {
-            markers[prevMarker].icon = UIImage(named: "blue_map_marker")
+            markers[prevMarker].icon = UIImage(named: "grey_marker")
         }
-        markers[index].icon = UIImage(named: "grey_marker")
+        markers[index].icon = UIImage(named: "blue_map_marker")
         prevMarker = index
         
         self.browserMapView.animateToLocation(markers[index].position)
@@ -135,7 +142,7 @@ class SessionBrowserViewController : UIViewController, CLLocationManagerDelegate
     func mapView (mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
         
         if (prevMarker != -1) {
-            markers[prevMarker].icon = UIImage(named: "blue_map_marker")
+            markers[prevMarker].icon = UIImage(named: "grey_marker")
         }
         
         
@@ -143,7 +150,7 @@ class SessionBrowserViewController : UIViewController, CLLocationManagerDelegate
         var mark = marker as! CustomBrowserMarker
         var sessionID = mark.session["sessionID"]
         var index = mark.index
-        markers[index].icon = UIImage(named: "grey_marker")
+        markers[index].icon = UIImage(named: "blue_map_marker")
         
         prevMarker = index
         
@@ -166,6 +173,8 @@ class SessionBrowserViewController : UIViewController, CLLocationManagerDelegate
             
             sessionViewController = segue.destinationViewController as! UIViewController
             (segue.destinationViewController as! SessionViewController).sessions = self.sessions!
+            (segue.destinationViewController as! SessionViewController).backImage = self.view.getImage()
+
         } else if segue.identifier == "createSessionView" {
             (segue.destinationViewController as! SessionCreationViewController).courseName = self.courseName
         }
